@@ -69,6 +69,9 @@ class Advert
     private $author;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="content", type="text")
      * @Assert\NotBlank()
      * @Antiflood()
      */
