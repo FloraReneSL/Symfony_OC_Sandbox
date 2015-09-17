@@ -1,0 +1,22 @@
+{# src/OC/PlatformBundle/Resources/views/Advert/edit.html.twig #}
+
+
+{% extends "OCPlatformBundle::layout.html.twig" %}
+
+{% block title %}
+  Modifier une annonce - {{ parent() }}
+{% endblock %}
+
+
+{% block ocplatform_body %}
+  <h2>Modifier une annonce</h2>
+  <p>
+    Annonce éditée le : {{ udDated|date('d/m/Y') }} à {{ udDated|date('H:i:s') }}
+  </p>
+  <p>
+    <a href="{{ path('oc_platform_view', {'id': advert.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à l'annonce
+    </a>
+  </p>
+{% endblock %}
